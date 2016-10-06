@@ -1,9 +1,9 @@
 
-html, body {
+html, 
+body {
     height: 100%;
     background: black;
     min-height: 680px;
-    min-width: 400px;
 }
 
 .about-me {
@@ -11,22 +11,20 @@ html, body {
     z-index: 4;
 }
 
-.about-me > p {
+.about-me p {
     color: white;
     font-size: 18px;
+    font-weight: 200;
     width :75%;
+    letter-spacing: 1px;
     line-height: 1.63636;
-    margin-bottom: 1.5rem;
+    margin: 0 auto 1.5rem auto
 }
 
-.about-me > p > a {
+.about-me p a {
     color: white;
     text-decoration: none;
     border-bottom: 1px solid;
-}
-
-.fhc-filter{
-    background-color: red;
 }
 
 .hero {
@@ -44,16 +42,16 @@ html, body {
     z-index: 4;
 }
 
-.hero-navigation > ul {
+.hero-navigation ul {
     list-style: none;
     padding: 0;
 }
 
-.hero-navigation > ul > li {
+.hero-navigation ul li {
     display: inline-block;
 }
 
-.hero-navigation > ul > li > a {
+.hero-navigation ul li a {
     background: black;
     border: solid 1px white;
     border-radius: 50%;
@@ -65,7 +63,7 @@ html, body {
     transition: all 0.5s ease;
 }
 
-.hero-navigation > ul > li:hover  a {
+.hero-navigation ul li:hover  a {
     background: white;
     border-radius: 50%;
     color: black;
@@ -89,16 +87,14 @@ html, body {
 
 .hero-wrapper {
     color: #fff;
-    left: 30px;
     position: absolute;
-    right: 0;
-    text-align: left;
+    text-align: center;
     top:-500px;
     z-index: 3;
 }
 
-.vertical-align {
-    margin-bottom: 5%;
+.hero-wrapper h1 {
+    font-weight: 300;
 }
 
 /*filters*/
@@ -122,12 +118,12 @@ html, body {
         width: 100%;
     }
 
-    .about-me > p {
+    .about-me p {
         font-size: 40px;
         width: 100%;
     }
     
-    .hero-wrapper > h1 {
+    .hero-wrapper h1 {
         font-size: 70px;
     }
 
@@ -135,7 +131,7 @@ html, body {
         top: 60%;
     }
 
-    .hero-navigation > ul > li > a {
+    .hero-navigation ul li a {
         font-size: 80px;
         line-height: 150px;
         height: 150px;
